@@ -1,0 +1,88 @@
+body {
+    font-size: 16px; /* 调整整个页面的字体大小 */
+    letter-spacing: 1px; /* 调整整个页面的字间距 */
+}
+.navbar-nav {
+    font-size: 18px; /* 调整导航栏的字体大小 */
+    letter-spacing: 2px; /* 调整导航栏的字间距 */
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* 使元素在水平方向上平均分布 */
+    align-items: center; /* 垂直方向上的对齐方式为居中 */
+    gap: 20px; /* 元素之间的间隔 */
+}
+.image-container {
+    flex: 1;             /* 确保两个容器平均分配空间 */
+    padding: 10px;       /* 添加内边距以避免内容相互紧挨 */
+} 
+.annotation-container {
+    text-align: right;   /* 注释右对齐 */
+    padding-right: 10px; /* 添加右侧内边距保持和图片的对齐 */
+    margin-top: 5px;     /* 在注释和图片之间留出一点空间 */
+}
+
+.image-row img {
+    max-width: 100%; /* 最大宽度限制为父容器的100% */
+    height: auto; /* 高度自动，保持图片纵横比 */
+    }
+@media (max-width: 768px) {
+.image-row {
+    flex-direction: column; /* 在小屏幕上改为竖直堆叠 */
+    }
+.image-row img {
+    max-width: 90%; /* 小屏幕上允许图片更宽一些 */
+    }
+}
+nav {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.inline {
+    display: inline;
+}
+
+.page-header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.comments {
+    margin: 20px 0;
+}
+
+.reply-body {
+    margin-top: 10px;
+}
+
+.sidebar {
+    padding-left: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 0 40px;
+    color: #999;
+    border-top: 1px solid #e5e5e5;
+}
+
+.page-footer {
+    padding-top: 40px;
+}
+
+.tip { /* from github.com */
+    color: black !important;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    background-color: #fafbfc;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    box-shadow: inset 0 0 10px rgba(27, 31, 35, 0.05);
+}

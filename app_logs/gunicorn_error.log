@@ -1,0 +1,2688 @@
+[2024-05-28 15:40:49 +0800] [407984] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+ModuleNotFoundError: No module named 'demo.blueprint.hppied'
+[2024-05-28 15:40:49 +0800] [407983] [ERROR] Worker (pid:407984) exited with code 3
+[2024-05-28 15:40:49 +0800] [407985] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+ModuleNotFoundError: No module named 'demo.blueprint.hppied'
+[2024-05-28 15:40:49 +0800] [407983] [ERROR] Worker (pid:407985) exited with code 3
+[2024-05-28 15:42:18 +0800] [408036] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408035] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408034] [ERROR] Worker (pid:408035) exited with code 3
+[2024-05-28 15:42:18 +0800] [408037] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408101] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408166] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408167] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408165] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:42:18 +0800] [408034] [ERROR] Worker (pid:408037) exited with code 3
+[2024-05-28 15:42:18 +0800] [408231] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 6, in <module>
+    from demo.blueprint.hppied import hppied
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 17, in <module>
+    @biology.route('/', methods=['GET', 'POST'])
+NameError: name 'biology' is not defined
+[2024-05-28 15:43:43,169] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 19, in index
+    return render_template('base.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 24, in top-level template code
+    {% block nav %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 29, in block 'nav'
+    {{ render_nav_item('biology.index', '主页') }}
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/runtime.py", line 782, in _invoke
+    rv = self._func(*arguments)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_bootstrap/templates/base/nav.html", line 5, in template
+    href="{{ url_for(endpoint, **kwargs) }}">
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'biology.index'. Did you mean 'hppied.index' instead?
+[2024-05-28 16:18:35,638] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 25, in index
+    return render_template('search/search.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/search/search.html", line 16, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+[2024-05-28 16:19:03 +0800] [412226] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 197, in handle_quit
+    time.sleep(0.1)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 198, in handle_quit
+    sys.exit(0)
+SystemExit: 0
+[2024-05-28 16:33:47 +0800] [413311] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:47 +0800] [413309] [ERROR] Worker (pid:413311) exited with code 3
+[2024-05-28 16:33:47 +0800] [413310] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:47 +0800] [413312] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:47 +0800] [413309] [ERROR] Worker (pid:413310) exited with code 3
+[2024-05-28 16:33:47 +0800] [413313] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:47 +0800] [413440] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:47 +0800] [413441] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:48 +0800] [413568] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-28 16:33:48 +0800] [413632] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 21, in <module>
+    @app.route('/fetch-data', methods=['POST'])
+NameError: name 'app' is not defined
+[2024-05-29 12:34:40,378] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 19, in index
+    return render_template('base.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 23, in top-level template code
+    {% block nav %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 30, in block 'nav'
+    {{ render_nav_item('downlowd.index', 'Download') }}
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/runtime.py", line 782, in _invoke
+    rv = self._func(*arguments)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_bootstrap/templates/base/nav.html", line 5, in template
+    href="{{ url_for(endpoint, **kwargs) }}">
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'downlowd.index'. Did you mean 'download.index' instead?
+[2024-05-29 12:34:44,207] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/hppied.py", line 19, in index
+    return render_template('base.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 23, in top-level template code
+    {% block nav %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 30, in block 'nav'
+    {{ render_nav_item('downlowd.index', 'Download') }}
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/runtime.py", line 782, in _invoke
+    rv = self._func(*arguments)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_bootstrap/templates/base/nav.html", line 5, in template
+    href="{{ url_for(endpoint, **kwargs) }}">
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'downlowd.index'. Did you mean 'download.index' instead?
+[2024-05-29 12:35:14 +0800] [424340] [CRITICAL] WORKER TIMEOUT (pid:424472)
+[2024-05-29 12:35:14 +0800] [424472] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-05-30 15:17:10 +0800] [441046] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:10 +0800] [441047] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:10 +0800] [441045] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:11 +0800] [441048] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:11 +0800] [441044] [ERROR] Worker (pid:441046) exited with code 3
+[2024-05-30 15:17:11 +0800] [441044] [ERROR] Worker (pid:441047) was sent SIGTERM!
+[2024-05-30 15:17:11 +0800] [441044] [ERROR] Worker (pid:441048) was sent SIGTERM!
+[2024-05-30 15:17:11 +0800] [441044] [ERROR] Worker (pid:441045) was sent SIGTERM!
+[2024-05-30 15:17:11 +0800] [441122] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:11 +0800] [441176] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:11 +0800] [441044] [ERROR] Worker (pid:441122) exited with code 3
+[2024-05-30 15:17:11 +0800] [441303] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:11 +0800] [441304] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 41, in <module>
+    @app.route('/suggest-genes', methods=['GET'])
+NameError: name 'app' is not defined
+[2024-05-30 15:17:40,351] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 19, in index
+    return render_template('search/search.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/search/search.html", line 6, in template
+    {% block content %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+[2024-05-30 15:17:45,446] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 19, in index
+    return render_template('search/search.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/search/search.html", line 6, in template
+    {% block content %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+[2024-05-30 15:18:14 +0800] [441564] [CRITICAL] WORKER TIMEOUT (pid:441824)
+[2024-05-30 15:18:14 +0800] [441824] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-05-30 15:35:35 +0800] [443403] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 197, in handle_quit
+    time.sleep(0.1)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 198, in handle_quit
+    sys.exit(0)
+SystemExit: 0
+[2024-05-30 16:00:00 +0800] [447969] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [447968] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [447965] [ERROR] Worker (pid:447969) exited with code 3
+[2024-05-30 16:00:00 +0800] [447965] [ERROR] Worker (pid:447968) was sent SIGTERM!
+[2024-05-30 16:00:00 +0800] [447966] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [447967] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [448034] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [447965] [ERROR] Worker (pid:447967) exited with code 3
+[2024-05-30 16:00:00 +0800] [447965] [ERROR] Worker (pid:447966) exited with code 3
+[2024-05-30 16:00:00 +0800] [448033] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [448098] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:00 +0800] [448162] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 12, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+[2024-05-30 16:00:47 +0800] [448504] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448503] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448568] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448502] [ERROR] Worker (pid:448503) exited with code 3
+[2024-05-30 16:00:47 +0800] [448633] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448502] [ERROR] Worker (pid:448504) exited with code 3
+[2024-05-30 16:00:47 +0800] [448592] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448761] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448697] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:00:47 +0800] [448825] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:31 +0800] [449158] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:31 +0800] [449157] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449156] [ERROR] Worker (pid:449157) exited with code 3
+[2024-05-30 16:10:32 +0800] [449159] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449156] [ERROR] Worker (pid:449158) was sent SIGTERM!
+[2024-05-30 16:10:32 +0800] [449286] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449287] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449288] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449156] [ERROR] Worker (pid:449159) exited with code 3
+[2024-05-30 16:10:32 +0800] [449352] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:10:32 +0800] [449353] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 15, in <module>
+    search.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///genes.db'  # 使用SQLite作为数据库
+AttributeError: 'Blueprint' object has no attribute 'config'
+[2024-05-30 16:11:38 +0800] [449692] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449693] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449691] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449758] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449690] [ERROR] Worker (pid:449692) exited with code 3
+[2024-05-30 16:11:38 +0800] [449694] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449690] [ERROR] Worker (pid:449691) was sent SIGTERM!
+[2024-05-30 16:11:38 +0800] [449690] [ERROR] Worker (pid:449758) was sent SIGTERM!
+[2024-05-30 16:11:38 +0800] [449690] [ERROR] Worker (pid:449693) was sent SIGTERM!
+[2024-05-30 16:11:38 +0800] [449822] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449886] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449887] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/wangzc/database/HPPIED/wsgi.py", line 1, in <module>
+    from demo import create_app
+  File "/home/wangzc/database/HPPIED/demo/__init__.py", line 7, in <module>
+    from demo.blueprint.search import search,db
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 17, in <module>
+    db = SQLAlchemy(search)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 278, in __init__
+    self.init_app(app)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask_sqlalchemy/extension.py", line 311, in init_app
+    if "sqlalchemy" in app.extensions:
+AttributeError: 'Blueprint' object has no attribute 'extensions'
+[2024-05-30 16:11:38 +0800] [449690] [ERROR] Worker (pid:449694) exited with code 3
+[2024-05-30 17:14:31,712] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:32,333] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:33,976] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:34,839] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:35,100] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:35,584] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:35,853] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:36,232] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:37,302] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:37,455] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:38,113] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:14:42,471] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:15:34,564] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:15:38,771] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 59, in suggest_genes
+    suggestions = [gene.name for gene in matching_genes]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 59, in <listcomp>
+    suggestions = [gene.name for gene in matching_genes]
+AttributeError: 'Gene' object has no attribute 'name'
+[2024-05-30 17:19:12,031] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: gene.ensembl
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    matching_genes = Gene.query.filter(Gene.symbol.like(f"%{query}%")).limit(8).all()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: gene.ensembl
+[SQL: SELECT gene.id AS gene_id, gene.symbol AS gene_symbol, gene.ensembl AS gene_ensembl 
+FROM gene 
+WHERE gene.symbol LIKE ?
+ LIMIT ? OFFSET ?]
+[parameters: ('%a%', 8, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-05-30 17:19:12,545] ERROR in app: Exception on /suggest-genes [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: gene.ensembl
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 55, in suggest_genes
+    matching_genes = Gene.query.filter(Gene.symbol.like(f"%{query}%")).limit(8).all()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: gene.ensembl
+[SQL: SELECT gene.id AS gene_id, gene.symbol AS gene_symbol, gene.ensembl AS gene_ensembl 
+FROM gene 
+WHERE gene.symbol LIKE ?
+ LIMIT ? OFFSET ?]
+[parameters: ('%a%', 8, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-05-30 21:06:46,406] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 28, in index
+    return render_template('search/search.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/search/search.html", line 2, in top-level template code
+    {% from 'bootstrap4/form.html' import render_form %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 41, in top-level template code
+    {% block nav %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 46, in block 'nav'
+    {{ render_nav_item('hppied.index', 'Home') }}
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+[2024-05-30 21:06:49,861] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 28, in index
+    return render_template('search/search.html')
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/wangzc/database/HPPIED/demo/templates/search/search.html", line 2, in top-level template code
+    {% from 'bootstrap4/form.html' import render_form %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 41, in top-level template code
+    {% block nav %}
+  File "/home/wangzc/database/HPPIED/demo/templates/base.html", line 46, in block 'nav'
+    {{ render_nav_item('hppied.index', 'Home') }}
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'render_nav_item' is undefined
+[2024-05-30 21:07:20 +0800] [468210] [CRITICAL] WORKER TIMEOUT (pid:468277)
+[2024-05-30 21:07:20 +0800] [468277] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-05-31 13:32:57 +0800] [500563] [CRITICAL] WORKER TIMEOUT (pid:500564)
+[2024-05-31 13:32:57 +0800] [500564] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-05-31 14:33:20,107] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 38, in fetch_data
+    abot_list.append(line.strip())
+NameError: name 'abot_list' is not defined
+[2024-05-31 14:34:07,561] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 38, in fetch_data
+    abot_list.append(line.strip())
+NameError: name 'abot_list' is not defined
+[2024-05-31 14:35:16,492] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 38, in fetch_data
+    abot_list.append(line.strip())
+NameError: name 'abot_list' is not defined
+[2024-05-31 14:44:45,385] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/HPPIED/demo/blueprint/search.py", line 36, in fetch_data
+    with open('demo/static/images/'+ id_value +'_about.txt') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'demo/static/images/A1CF_about.txt'
+[2024-05-31 16:46:16 +0800] [514278] [CRITICAL] WORKER TIMEOUT (pid:514345)
+[2024-05-31 16:46:16 +0800] [514345] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-05-31 16:47:45 +0800] [514278] [CRITICAL] WORKER TIMEOUT (pid:514281)
+[2024-05-31 16:47:45 +0800] [514281] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-06-01 19:12:16,749] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/backup/demo/blueprint/search.py", line 36, in fetch_data
+    about_path='demo/static/images/'+ id_value +'_about.txt'
+TypeError: can only concatenate str (not "Gene") to str
+[2024-06-01 19:12:24,408] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/backup/demo/blueprint/search.py", line 36, in fetch_data
+    about_path='demo/static/images/'+ id_value +'_about.txt'
+TypeError: can only concatenate str (not "Gene") to str
+[2024-06-01 19:13:25,576] ERROR in app: Exception on /fetch-data [POST]
+Traceback (most recent call last):
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wangzc/anaconda3/envs/flask2024/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wangzc/database/backup/demo/blueprint/search.py", line 37, in fetch_data
+    about_path='demo/static/images/'+ id_value +'_about.txt'
+TypeError: can only concatenate str (not "Gene") to str

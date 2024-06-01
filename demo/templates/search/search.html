@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% from 'bootstrap4/form.html' import render_form %}
+
+{% block title %}Gene Data Explorer{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="idType" class="d-block">Gene Type:</label>
+                <select class="form-control" id="idType" name="idType">
+                    <option value="symbol">Symbol</option>
+                    <option value="ensembl">Ensembl</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="idValue" class="d-block">Gene Name:</label>
+                <input type="text" class="form-control" id="idValue" name="idValue" autocomplete="off">
+                <div id="geneSuggestions" class="list-group" style="position: absolute; width: 10%; z-index: 1000; display: none;"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="d-block">&nbsp;</label>
+                <button type="button" id="goButton" class="btn btn-primary">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 使用 Bootstrap 卡片组件展示结果 -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Gene Card</strong>
+                </div>
+                <div class="card-body" id="genecard">
+                    Please enter search content...
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Single Cell Feature Plot</strong>
+                </div>
+                <div class="card-body" id="featurePlotResult">
+                    Please enter search content...
+                </div>
+            </div>
+
+
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Single Cell Violin Plot</strong>
+                </div>
+                <div class="card-body" id="violinPlotResult">
+                    Please enter search content...
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Expression Levels at Different Developmental Stages</strong>
+                </div>
+                <div class="card-body" id="developmentalStagesResult">
+		    Please enter search content...
+                </div>
+            </div>   
+    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+

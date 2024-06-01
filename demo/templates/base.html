@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% from 'bootstrap4/nav.html' import render_nav_item %}
+<html lang="en">
+
+
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/blue.mini.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+	<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    {% endblock head %}
+</head>
+
+<body>
+    {% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    {{ render_nav_item('hppied.index', 'Home') }}
+                    {{ render_nav_item('search.index', 'Search') }}
+                    {{ render_nav_item('download.index', 'Download') }}
+                    {{ render_nav_item('help.index', 'Help') }}
+                    {{ render_nav_item('about.index', 'About') }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock nav %}
+    
+    {% block content %}
+    <!-- 主内容区域 -->
+    {% endblock content %}
+     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
+
