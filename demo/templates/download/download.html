@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}
+Download
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-5" style="font-family: Arial, sans-serif; font-weight: 500; font-size: 4rem; color: #2c3e50; text-transform: uppercase; letter-spacing: 2px;">Download</h1>
+    
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Dataset</th>
+                    <th>Source</th>
+                    <th>Cell Number</th>
+                    <th>Stage</th>
+                    <th>Platform</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row['Dataset'] }}</td>
+                    <td><a href="{{ row['Link'] }}">{{ row['Source'] }}</a></td>
+                    <td>{{ row['Cell Number'] }}</td>
+                    <td>{{ row['Stage'] }}</td>
+                    <td>{{ row['Platform'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<!-- Footer Section -->
+<footer class="footer mt-5 py-3">
+    <div class="footer-content">
+        <img src="{{ url_for('static', filename='images/footer.png') }}" class="img-fluid footer-img" alt="Footer Image">
+    </div>
+</footer>
+
+{% endblock content %}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .container {
+        padding-bottom: 5rem; /* 增加下方留白 */
+    }
+
+    .table thead th {
+        font-family: 'Arial', sans-serif;
+        font-weight: 600;
+    }
+
+    .table tbody td {
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+    }
+
+    .table-responsive {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #23255f; /* 自定义颜色 */
+    }
+
+    .footer-content {
+        width: 100%;
+        background-color: #23255f; /* 自定义颜色 */
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .footer-img {
+        width: 100%;
+        height: auto;
+        max-height: 150px; /* 设置最大高度，默认不全露出来 */
+    }
+</style>
+

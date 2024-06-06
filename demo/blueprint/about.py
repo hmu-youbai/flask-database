@@ -14,6 +14,6 @@ from wtforms.validators import DataRequired, Length, Optional, URL
 about = Blueprint('about', __name__)
 
 
-@about.route('/', methods=['GET', 'POST'])
+@about.route('/about', methods=['GET', 'POST'])
 def index():
-    return render_template('base.html')
+    return render_template('about/about.html')

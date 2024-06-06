@@ -14,6 +14,6 @@ from wtforms.validators import DataRequired, Length, Optional, URL
 help = Blueprint('help', __name__)
 
 
-@help.route('/', methods=['GET', 'POST'])
+@help.route('/help', methods=['GET', 'POST'])
 def index():
-    return render_template('base.html')
+    return render_template('help/help.html')

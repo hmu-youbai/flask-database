@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% block title %}
+Overview
+{% endblock title %}
+
+
+{% block content %}
+<div class="container mt-3">
+    <!-- About HPPIED Section -->
+    <div class="container mt-5">
+	<h1 class="display-4 text-center mb-5" style="font-family: Arial, sans-serif; font-weight: 500; font-size: 4rem; color: #2c3e50; letter-spacing: 2px;">About HPPIED</h1>
+        <p class="mt-4">
+            In order to provide a convenient and broad platform for research of human early embryo, we present the HPPIED (Pre and Peri-Implantation Embryo), a web-based single-cell transcriptomic database of human early embryo. The HPPIED contains 10 datasets about 29k cells at the single-cell level. Based on the integration of published literatures, we provide a visualization tool of detailed cell types and gene expression profiles.
+        </p>
+    </div>
+    <br><br>
+    <!-- Browse Single-cell Profiling Section -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Browse Single-cell Profiling</strong>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <label for="visualization" class="mr-2 mb-0">Development Stage</label>
+                        <select class="form-control form-control-sm custom-select-width mr-3" id="visualization">
+                            <option value="dataset1">Stage</option>
+                            <option value="dataset2">Dataset</option>
+                        </select>
+                        <label for="reduction" class="mr-2 mb-0">Reduction</label>
+                        <select class="form-control form-control-sm custom-select-width" id="reduction">
+                            <option value="umap">UMAP</option>
+                            <option value="tsne">TSNE</option>
+                        </select>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/single_cell_profiling_1.png') }}" class="img-fluid" id="profilingImage" alt="Single Cell Profiling">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gene Expression Pathway Section -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Lineage Differentiation Process</strong>
+                </div>
+                <div class="card-body">
+                    <img src="{{ url_for('static', filename='images/marker_gene.png') }}" class="img-fluid" alt="Gene Expression Pathway">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cell Type Distribution Section -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <strong>Cell Type Distribution</strong>
+                </div>
+                <div class="card-body">
+                    <img src="{{ url_for('static', filename='images/cellnum.png') }}" class="img-fluid" alt="Cell Type Distribution">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer mt-5 py-3">
+    <div class="footer-content">
+        <img src="{{ url_for('static', filename='images/footer.png') }}" class="img-fluid footer-img" alt="Footer Image">
+    </div>
+</footer>
+
+
+<style>
+    .custom-select-width {
+        max-width: 150px;
+    }
+    .form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4zM0 3l2 2 2-2z"/></svg>') no-repeat right 0.75rem center/8px 10px;
+    }
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .footer {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #23255f; /* 自定义颜色 */
+    }
+
+    .footer-content {
+        width: 100%;
+        background-color: #23255f; /* 自定义颜色 */
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .footer-img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        updateImage();
+    });
+
+    document.getElementById('visualization').addEventListener('change', updateImage);
+    document.getElementById('reduction').addEventListener('change', updateImage);
+
+    function updateImage() {
+        var visualization = document.getElementById('visualization').value;
+        var reduction = document.getElementById('reduction').value;
+        var imgPath = 'images/single_cell_profiling_1.png';
+
+        if (visualization === 'dataset2' && reduction === 'umap') {
+            imgPath = 'images/single_cell_profiling_1.png';
+        } else if (visualization === 'dataset2' && reduction === 'tsne') {
+            imgPath = 'images/single_cell_profiling_2.png';
+        } else if (visualization === 'dataset1' && reduction === 'umap') {
+            imgPath = 'images/single_cell_profiling_3.png';
+        } else if (visualization === 'dataset1' && reduction === 'tsne') {
+            imgPath = 'images/single_cell_profiling_4.png';
+        }
+
+        document.getElementById('profilingImage').src = '{{ url_for('static', filename='') }}' + imgPath;
+    }
+</script>
+{% endblock content %}
+

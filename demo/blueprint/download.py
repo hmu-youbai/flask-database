@@ -14,6 +14,8 @@ from wtforms.validators import DataRequired, Length, Optional, URL
 download = Blueprint('download', __name__)
 
 
-@download.route('/', methods=['GET', 'POST'])
+@download.route('/download', methods=['GET', 'POST'])
 def index():
-    return render_template('base.html')
+    csv_path = 'Download_dataset.csv'
+    data = pd.read_csv(csv_path).to_dict(orient='records')
+    return render_template('download/download.html',  data=data)

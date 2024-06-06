@@ -16,4 +16,4 @@ hppied = Blueprint('hppied', __name__)
 
 @hppied.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('base.html')
+    return render_template('home/home.html')

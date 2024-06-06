@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <!-- Jumbotron Section -->
+    <div class="jumbotron text-center mt-4 bg-white rounded shadow-sm">
+        <h1 class="display-4">HPPIED</h1>
+        <p class="lead">Human Pre and Peri-Implantation Embryo Database</p>
+        <p class="mt-4">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('search.index') }}" role="button">Query single gene</a>
+            <a class="btn btn-secondary btn-lg" href="{{ url_for('help.index') }}" role="button">Gene format help</a>
+        </p>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="d-flex align-items-center mb-4">
+                    <img src="{{ url_for('static', filename='ico/statistics.png') }}" alt="Statistics Icon" class="mr-2">
+                    <h2 class="mb-0">Statistics</h2>
+                </div>
+                <hr>
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-2 stat-item">
+                        <h3 class="stat-number">10</h3>
+                        <p>studies</p>
+                    </div>
+                    <div class="col-md-2 stat-item">
+                        <h3 class="stat-number">&gt;320</h3>
+                        <p>donors</p>
+                    </div>
+                    <div class="col-md-2 stat-item">
+                        <h3 class="stat-number">29239</h3>
+                        <p>cells</p>
+                    </div>
+                    <div class="col-md-2 stat-item">
+                        <h3 class="stat-number">17</h3>
+                        <p>structural units</p>
+                    </div>
+                    <div class="col-md-2 stat-item">
+                        <h3 class="stat-number">14</h3>
+                        <p>main cell types</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links Section -->
+    <div class="row text-center mt-5">
+        <div class="col-md-4 mb-4">
+            <a href="{{ url_for('search.index') }}">
+                <div class="card custom-card">
+                    <img src="{{ url_for('static', filename='images/111.png') }}" class="card-img-top custom-img" alt="Visualization">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a href="{{ url_for('download.index') }}">
+                <div class="card custom-card">
+                    <img src="{{ url_for('static', filename='images/222.png') }}" class="card-img-top custom-img" alt="Single-cell Database">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a href="{{ url_for('about.index') }}">
+                <div class="card custom-card">
+                    <img src="{{ url_for('static', filename='images/333.png') }}" class="card-img-top custom-img" alt="Pre & Post-implementation Embryo">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<br><br>
+<!-- Footer Section -->
+<footer class="footer mt-5 py-3">
+    <div class="footer-content">
+        <img src="{{ url_for('static', filename='images/footer.png') }}" class="img-fluid footer-img" alt="Footer Image">
+    </div>
+</footer>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .jumbotron {
+        padding: 4rem 2rem; /* 调整padding以增加高度 */
+        border: 1px solid #ddd;
+    }
+
+    .jumbotron h1 {
+        font-family: 'Georgia', serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .jumbotron .lead {
+        font-family: 'Arial', sans-serif;
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+
+    .jumbotron .btn {
+        font-family: 'Arial', sans-serif;
+        font-weight: 600;
+    }
+
+    .custom-img {
+        width: 60%;
+        transition: transform 0.2s;
+        margin: 0 auto;
+    }
+
+    .custom-card {
+        border: none;
+    }
+
+    .custom-img:hover {
+        transform: scale(1.05);
+    }
+
+    .col-md-4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #23255f; /* 自定义颜色 */
+    }
+
+    .footer-content {
+        width: 100%;
+        background-color: #23255f; /* 自定义颜色 */
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .footer-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem; /* 调整左右间距 */
+        margin: 1rem 0; /* 调整上下间距 */
+    }
+
+    .stat-number {
+        font-size: 2rem; /* 调整数字的字号 */
+    }
+</style>
+{% endblock content %}
+

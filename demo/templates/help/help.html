@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+Help
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="display-4 text-center mb-5" style="font-family: Arial, sans-serif; font-weight: 500; font-size: 2.5rem; color: #2c3e50; letter-spacing: 2px;">HOME PAGE</h2>
+    <p class="text-center mt-4">
+    The home page provides details about this database, which contains ten datasets. It also outlines the lineage differentiation process of the human early embryo and highlights the corresponding markers of different cell types at various developmental stages.
+    </p>
+    <br><br>
+<h2 class="display-4 text-center mb-5" style="font-family: Arial, sans-serif; font-weight: 500; font-size: 2.5rem; color: #2c3e50; letter-spacing: 2px;">SEARCH PAGE (Single Gene)</h2>
+    <p class="text-center mt-4">
+    The HPPIED page offers a user-friendly search interface for gene data exploration. Users can click the search button to explore data based on gene information and choose either ENSEMBL ID or Gene Symbol for their search. The search page displays feature plots, violin plots of expression levels for the input gene, and line plots illustrating different developmental stages and cell types simultaneously.
+    </p>
+
+    <div class="text-center mt-5">
+        <img src="{{ url_for('static', filename='images/help_example.png') }}" class="img-fluid" alt="Help Example Image" style="border: 2px solid #000; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); max-width: 100%; margin: 20px auto; background-color: #fff;">
+    </div>
+</div>
+<br><br>
+<!-- Footer Section -->
+<footer class="footer mt-5 py-3">
+    <div class="footer-content">
+        <img src="{{ url_for('static', filename='images/footer.png') }}" class="img-fluid footer-img" alt="Footer Image">
+    </div>
+</footer>
+
+{% endblock content %}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .container {
+        padding-bottom: 5rem; /* 增加下方留白 */
+    }
+
+    .footer {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #23255f; /* 自定义颜色 */
+    }
+
+    .footer-content {
+        width: 100%;
+        background-color: #23255f; /* 自定义颜色 */
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .footer-img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
